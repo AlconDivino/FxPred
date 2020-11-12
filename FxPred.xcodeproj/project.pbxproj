@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0C94CBEF255DAEB600FD7B7F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C94CBEE255DAEB600FD7B7F /* main.cpp */; };
+		0C94CC06255DB0CC00FD7B7F /* libtorch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94CBFD255DAFA900FD7B7F /* libtorch.dylib */; };
+		0C94CC0C255DB10D00FD7B7F /* libc10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94CBF6255DAF9F00FD7B7F /* libc10.dylib */; };
+		0C94CC0D255DB10D00FD7B7F /* libc10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0C94CBF6255DAF9F00FD7B7F /* libc10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0C94CC0E255DB11400FD7B7F /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94CC03255DAFB800FD7B7F /* libiomp5.dylib */; };
+		0C94CC0F255DB11400FD7B7F /* libiomp5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0C94CC03255DAFB800FD7B7F /* libiomp5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0C94CC10255DB1CD00FD7B7F /* libtorch.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0C94CBFD255DAFA900FD7B7F /* libtorch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0C94CC11255DB1ED00FD7B7F /* libtorch_cpu.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */; };
+		0C94CC12255DB1ED00FD7B7F /* libtorch_cpu.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0C94CC15255DB31100FD7B7F /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C94CC13255DB31100FD7B7F /* DataManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +29,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0C94CC0B255DB10200FD7B7F /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C94CC0F255DB11400FD7B7F /* libiomp5.dylib in Embed Libraries */,
+				0C94CC0D255DB10D00FD7B7F /* libc10.dylib in Embed Libraries */,
+				0C94CC12255DB1ED00FD7B7F /* libtorch_cpu.dylib in Embed Libraries */,
+				0C94CC10255DB1CD00FD7B7F /* libtorch.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C94CBEB255DAEB600FD7B7F /* FxPred */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FxPred; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C94CBEE255DAEB600FD7B7F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C94CBF6255DAF9F00FD7B7F /* libc10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc10.dylib; path = ../Ressources/libtorch/lib/libc10.dylib; sourceTree = "<group>"; };
+		0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtorch_cpu.dylib; path = ../Ressources/libtorch/lib/libtorch_cpu.dylib; sourceTree = "<group>"; };
+		0C94CBFD255DAFA900FD7B7F /* libtorch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtorch.dylib; path = ../Ressources/libtorch/lib/libtorch.dylib; sourceTree = "<group>"; };
+		0C94CC00255DAFB100FD7B7F /* libtorch_global_deps.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtorch_global_deps.dylib; path = ../Ressources/libtorch/lib/libtorch_global_deps.dylib; sourceTree = "<group>"; };
+		0C94CC03255DAFB800FD7B7F /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiomp5.dylib; path = ../Ressources/libtorch/lib/libiomp5.dylib; sourceTree = "<group>"; };
+		0C94CC13255DB31100FD7B7F /* DataManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataManager.cpp; sourceTree = "<group>"; };
+		0C94CC14255DB31100FD7B7F /* DataManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataManager.hpp; sourceTree = "<group>"; };
+		0C94CC18255DB43800FD7B7F /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C94CC0E255DB11400FD7B7F /* libiomp5.dylib in Frameworks */,
+				0C94CC06255DB0CC00FD7B7F /* libtorch.dylib in Frameworks */,
+				0C94CC11255DB1ED00FD7B7F /* libtorch_cpu.dylib in Frameworks */,
+				0C94CC0C255DB10D00FD7B7F /* libc10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +78,7 @@
 			children = (
 				0C94CBED255DAEB600FD7B7F /* FxPred */,
 				0C94CBEC255DAEB600FD7B7F /* Products */,
+				0C94CBF5255DAF9F00FD7B7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +94,23 @@
 			isa = PBXGroup;
 			children = (
 				0C94CBEE255DAEB600FD7B7F /* main.cpp */,
+				0C94CC13255DB31100FD7B7F /* DataManager.cpp */,
+				0C94CC14255DB31100FD7B7F /* DataManager.hpp */,
+				0C94CC18255DB43800FD7B7F /* globals.h */,
 			);
 			path = FxPred;
+			sourceTree = "<group>";
+		};
+		0C94CBF5255DAF9F00FD7B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C94CC03255DAFB800FD7B7F /* libiomp5.dylib */,
+				0C94CC00255DAFB100FD7B7F /* libtorch_global_deps.dylib */,
+				0C94CBFD255DAFA900FD7B7F /* libtorch.dylib */,
+				0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */,
+				0C94CBF6255DAF9F00FD7B7F /* libc10.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +123,7 @@
 				0C94CBE7255DAEB600FD7B7F /* Sources */,
 				0C94CBE8255DAEB600FD7B7F /* Frameworks */,
 				0C94CBE9255DAEB600FD7B7F /* CopyFiles */,
+				0C94CC0B255DB10200FD7B7F /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -120,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C94CBEF255DAEB600FD7B7F /* main.cpp in Sources */,
+				0C94CC15255DB31100FD7B7F /* DataManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +292,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../Ressources/libtorch/include\"",
+					"\"$(SRCROOT)/../Ressources/libtorch/include/torch/csrc/api/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../Ressources/libtorch/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +305,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../Ressources/libtorch/include\"",
+					"\"$(SRCROOT)/../Ressources/libtorch/include/torch/csrc/api/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../Ressources/libtorch/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -6,10 +6,37 @@
 //  Copyright © 2020 Liam Briegel. All rights reserved.
 //
 
+
+// C/C++
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+// External
+#include <torch/torch.h>
+
+// Project
+
+
+
+/** Main */
+int main(int argc, const char * argv[])
+{
+    auto t = torch::zeros({1,1});
+    
+    std::cout << t << std::endl;
+    
+    auto ptr =(float*) t.data_ptr();
+    
+    *ptr = 1;
+    
+    std::cout << t << std:: endl;
+    
+    auto newt = t;
+    
+    *(float*)newt.data_ptr() = 2;
+    
+    std::cout << newt << std:: endl;
+    
+    std::cout << t << std::endl;
+    
     return 0;
 }
