@@ -17,6 +17,7 @@
 		0C94CC11255DB1ED00FD7B7F /* libtorch_cpu.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */; };
 		0C94CC12255DB1ED00FD7B7F /* libtorch_cpu.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0C94CBFA255DAFA400FD7B7F /* libtorch_cpu.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0C94CC15255DB31100FD7B7F /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C94CC13255DB31100FD7B7F /* DataManager.cpp */; };
+		0C94CC1B255E913100FD7B7F /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C94CC19255E913100FD7B7F /* Model.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +57,8 @@
 		0C94CC13255DB31100FD7B7F /* DataManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DataManager.cpp; sourceTree = "<group>"; };
 		0C94CC14255DB31100FD7B7F /* DataManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataManager.hpp; sourceTree = "<group>"; };
 		0C94CC18255DB43800FD7B7F /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		0C94CC19255E913100FD7B7F /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		0C94CC1A255E913100FD7B7F /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				0C94CC13255DB31100FD7B7F /* DataManager.cpp */,
 				0C94CC14255DB31100FD7B7F /* DataManager.hpp */,
 				0C94CC18255DB43800FD7B7F /* globals.h */,
+				0C94CC19255E913100FD7B7F /* Model.cpp */,
+				0C94CC1A255E913100FD7B7F /* Model.hpp */,
 			);
 			path = FxPred;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C94CC1B255E913100FD7B7F /* Model.cpp in Sources */,
 				0C94CBEF255DAEB600FD7B7F /* main.cpp in Sources */,
 				0C94CC15255DB31100FD7B7F /* DataManager.cpp in Sources */,
 			);
