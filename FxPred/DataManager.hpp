@@ -16,6 +16,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include <cmath>
 
 // External
 
@@ -31,6 +32,10 @@ public:
     
     // Load candlesticks from file
     std::vector<candle> loadCandles(std::string s_filepath);
+    
+    // Split data
+    void splitData(std::vector<candle> &src, float ratio, std::vector<candle> &train, std::vector<candle> &test);
+    
     
 private:
     
