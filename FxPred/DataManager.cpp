@@ -65,7 +65,7 @@ std::vector<candle> DataManager::loadCandles(std::string s_filepath)
  *
  *  the ratio declases which part is assigned to the training data set
  */
-void DataManager::splitData(std::vector<candle> &src, float ratio, std::vector<candle> &train, std::vector<candle> &test)
+void DataManager::splitData(const std::vector<candle> &src, float ratio, std::vector<candle> &train, std::vector<candle> &test)
 {
     int idx = std::floor (static_cast<float>(src.size()) * ratio);
     
@@ -79,4 +79,10 @@ void DataManager::splitData(std::vector<candle> &src, float ratio, std::vector<c
     for(int i = idx; i < src.size(); i++)
         test.push_back(src[i]);
 }
+
+DataManager::DataManager()
+{
+    
+}
+
 

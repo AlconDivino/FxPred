@@ -35,6 +35,9 @@ private:
     torch::nn::Linear linear_layer = NULL;
     torch::nn::Linear output_layer = NULL;
     
+    // variables
+    int batch_size;
+    
 };
 
 #endif /* Model_hpp */
