@@ -21,9 +21,19 @@ class Model : public torch::nn::Module
 {
     
 public:
+    // Constructor
     Model(int input_dim, int hidden_dim, int batch_size, int output_dim, int num_layers);
     
+    // forward (AKA calculating the prediction)
     torch::Tensor forward(torch::Tensor input);
+    
+    // Used for detaching the hidden state for not getting the backward error!
+    void detachHidden();
+    
+    // Load/Save the hidden tensors
+    void saveHidden(std::string s_filepath);
+    void loadHidden(std::string s_filepath);
+    
     
 private:
     

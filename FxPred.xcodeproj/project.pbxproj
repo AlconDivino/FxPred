@@ -125,10 +125,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C94CBF2255DAEB600FD7B7F /* Build configuration list for PBXNativeTarget "FxPred" */;
 			buildPhases = (
-				0C94CBE7255DAEB600FD7B7F /* Sources */,
 				0C94CBE8255DAEB600FD7B7F /* Frameworks */,
 				0C94CBE9255DAEB600FD7B7F /* CopyFiles */,
 				0C94CC0B255DB10200FD7B7F /* Embed Libraries */,
+				0C94CBE7255DAEB600FD7B7F /* Sources */,
 			);
 			buildRules = (
 			);
